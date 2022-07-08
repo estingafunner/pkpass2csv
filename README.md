@@ -1,6 +1,6 @@
 # Json2Csv
 
-1. copy your .pkpass files into the pkpass folder.
+1. copy your .pkpass files into the 'pkpass' folder.
 2. run secondTry.py
 3. pass.json files will be in the 'passes' folder
 
