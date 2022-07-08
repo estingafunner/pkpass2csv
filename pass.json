@@ -1,0 +1,108 @@
+{
+    "description": "Delta Air Lines",
+    "organizationName": "Fly Delta",
+    "passTypeIdentifier": "pass.com.delta.ebp",
+    "serialNumber": "GGPDKQ20180702DL1448SFOATL9973767380144",
+    "teamIdentifier": "M38USRDT56",
+    "barcode": {
+        "format": "PKBarcodeFormatAztec",
+        "message": "M1MILLENDER/KYLI      EGGPDKQ SFOATLDL 1448 183Y022D0001 155>318  W     DL              2900671596170163                           DL3J9VVKZOW22D^160MEUCIQD2avDxJn9RJ8jI7BUKFVNhOLCKO8q2onN/SOhdsVUFNgIgRNps33rIM/aTLWBZEVlKOQBSTUhbBNtK1zQFHuztW+A=",
+        "messageEncoding": "iso-8859-1"
+    },
+    "backgroundColor": "rgb(0, 0, 51)",
+    "foregroundColor": "rgb(255, 255, 255)",
+    "groupingIdentifier": "GGPDKQ20180702",
+    "labelColor": "rgb(120, 131, 141)",
+    "webServiceURL": "https://api.delta.com/api/dl/boardingPass",
+    "authenticationToken": "e9c42be0-a578-44f8-ac7a-64ba9017ea71",
+    "ignoresTimeZone": false,
+    "locations": [{
+        "latitude": 37.6188,
+        "longitude": -122.39166
+    }],
+    "relevantDate": "2018-07-02T12:30:00-07:00",
+    "associatedStoreIdentifiers": [388491656],
+    "formatVersion": 1,
+    "boardingPass": {
+        "headerFields": [{
+            "key": "flightNumber2",
+            "label": "FLIGHT",
+            "changeMessage": "Flight number changed to %@",
+            "value": "DL1448"
+        }],
+        "primaryFields": [{
+            "key": "depart",
+            "label": "SAN FRANCISCO",
+            "changeMessage": "Departure airport changed to %@.",
+            "value": "SFO"
+        }, {
+            "key": "destination",
+            "label": "ATLANTA",
+            "changeMessage": "Destination airport changed to %@.",
+            "value": "ATL"
+        }],
+        "secondaryFields": [{
+            "key": "passenger",
+            "label": "PASSENGER",
+            "changeMessage": "Passenger changed to %@.",
+            "value": "KYLI MILLENDER"
+        }, {
+            "key": "class",
+            "label": "CLASS",
+            "changeMessage": "Class changed to %@.",
+            "textAlignment": "PKTextAlignmentRight",
+            "value": "Q"
+        }],
+        "backFields": [{
+            "key": "departsBack",
+            "label": "DEPARTS",
+            "value": "SFO: San Francisco, CA, US\n12:30PM, Jul 02, 2018"
+        }, {
+            "key": "arrivesBack",
+            "label": "ARRIVES",
+            "value": "ATL: Atlanta, GA, US\n8:16PM, Jul 02, 2018"
+        }, {
+            "key": "gateBack",
+            "label": "GATE",
+            "value": "46"
+        }, {
+            "key": "operatedByBack",
+            "label": "OPERATED BY",
+            "value": "Delta Air Lines"
+        }, {
+            "key": "ffProgram",
+            "label": "SKYMILES #",
+            "value": " "
+        }, {
+            "key": "confirmationNumber",
+            "label": "CONF #",
+            "value": "GGPDKQ"
+        }, {
+            "key": "ticketNumberBack",
+            "label": "TICKET #",
+            "value": "0067159617016"
+        }],
+        "auxiliaryFields": [{
+            "key": "boardTime",
+            "label": "BOARDING",
+            "changeMessage": "Boarding time changed to %@.",
+            "value": "11:50AM"
+        }, {
+            "key": "gate",
+            "label": "GATE",
+            "changeMessage": "Gate changed to %@.",
+            "value": "46"
+        }, {
+            "key": "zone",
+            "label": "ZONE",
+            "value": "2"
+        }, {
+            "key": "seat",
+            "label": "SEAT",
+            "changeMessage": "Seat changed to %@.",
+            "textAlignment": "PKTextAlignmentRight",
+            "value": "22D"
+        }],
+        "transitType": "PKTransitTypeAir"
+    }
+}
