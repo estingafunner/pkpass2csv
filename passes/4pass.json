@@ -1,149 +1,85 @@
-
-
-
 {
-   "serialNumber":"843185571",
-   "formatVersion":1,
-   "passTypeIdentifier":"pass.com.southwest.MobileBoardingPass",
-   "associatedStoreIdentifiers":[344542975],
-   "teamIdentifier":"2QHT4F69Y7",
-   "description":"description",
-   "locations": [
-          {
-           "latitude" : 33.4357,
-           "longitude" : -111.998,
-           "relevantText" : "relevantText"
-         }
-        ],
-   "expirationDate":"2018-08-26T18:41:42+00:00",
-   "barcode":{
-      "message":"M1MILLENDER/KYLI      EVCTIH8 PHXLASWN 0473 236Y0B240120 348>6180 M    BWN              2A             3    WN 418375462            ^460MEUCIQD+HaK+lzlc0vrls0OjilqinuKOR9uoawpjjASBnVeH7gIgM1CYTpwdRiF0DsFaT7GkCLs1rEqEWShN3KMxxBT/ZAA=",
-      "format":"PKBarcodeFormatAztec",
-      "messageEncoding":"iso-8859-1"
-   },
-   "organizationName":"Southwest Airlines",
-   "groupingIdentifier":"VCTIH8",
-   "logoText":"",
-   "foregroundColor":"rgb(255, 255, 255)",
-   "backgroundColor":"rgb(48, 76, 178)",
-   "labelColor":"rgb(255, 191, 39)",
-
-   "boardingPass":{
-      "transitType":"PKTransitTypeAir",
-      "headerFields":[
-         {
-            "key":"gate",
-            "label":"gateHeading",
-            "value":"C19",
-            "changeMessage":"gatechangeMessage"
-         },
-		 {
-            "key":"flight",
-            "label":"flightHeading",
-            "value":"473",
-            "changeMessage":"flightchangeMessage"
-         }
-		
-      ],
-      "primaryFields":[
-         {
-            "key":"source",
-            "label":"PHOENIX",
-            "value":"PHX",
-            "changeMessage":"sourcechangeMessage"
-         },
-         {
-            "key":"destination",
-            "label":"LAS VEGAS",
-            "value":"LAS",
-            "changeMessage":"destinationchangeMessage"
-         }
-      ],
-      "secondaryFields":[         
-         {
-            "key":"passenger",
-            "label":"passengerHeading",
-            "value":"Millender/Kyli",
-            "changeMessage":"passengerchangeMessage"
-         },
-        {
-            "key":"confirmation",
-            "label":"statusHeading",
-            "value":"--",
-            "textAlignment":"PKTextAlignmentRight",
-            "changeMessage":"statuschangeMessage"
-         }],
-              
-      "auxiliaryFields":[
-         {
-            "key":"boards",
-            "label":"boardsHeading",
-            "value":"05:20 PM",
-            "changeMessage":"boardschangeMessage"
-         },
-		 {
-            "key":"departs",
-            "label":"departsHeading",
-            "value":"05:50 PM",
-            "changeMessage":"departschangeMessage"
-         },
-         {
-            "key":"group",
-            "label":"groupHeading",
-            "value":"B",
-            "textAlignment":"PKTextAlignmentRight",
-            "changeMessage":"groupchangeMessage"
-         },
-         {
-            "key":"position",
-            "label":"positionHeading",
-            "value":"24",
-            "textAlignment":"PKTextAlignmentRight",
-            "changeMessage":"positionchangeMessage"
-         }
-      ],
-	"backFields" : [
-			{
-			"key":"flightDate",			
-			"label":"flightDate",
-			"value":"Friday, Aug 24, 2018"
-			},
-			{
-			"key":"departureTime",			
-			"label":"departureTime",
-			"value":"departureTimeText"
-			},
-			{
-			"key":"confNum",			
-			"label":"confNum",
-			"value":"VCTIH8"
-			},
-			{
-			"key":"rrNum",			
-			"label":"rrNum",
-			"value":"418375462"
-			},
-			{
-			"key":"fareType",			
-			"label":"fareType",
-			"value":"Anytime"
-			},
-			{
-			"key":"coupon",			
-			"label":"coupon",
-						"value":"No"
-						},
-			{
-			"key":"specialAssistance",			
-			"label":"specialAssistance",
-			"value":"--"
-			},
-			{
-			"key":"SouthwestWishes",			
-			"label":"southwestWishes",
-			"value":"southwestWishesText"
-			}
-    ]	
-    
-   }
+  "passTypeIdentifier": "pass.com.navitaire.digital.jsx",
+  "formatVersion": 1,
+  "serialNumber": "P3R7MF|WEV_IDEwNn4gfn5MQVN_MTEvMTIvMjAyMCAxODozMH5CVVJ_MTEvMTIvMjAyMCAxOTo0MH5_|MCFBRFQ-|LAS|BUR",
+  "description": "Flight from LAS to BUR",
+  "organizationName": "JSX",
+  "teamIdentifier": "T4W249T368",
+  "sharingProhibited": false,
+  "relevantDate": "2020-11-13T02:30:00+00:00",
+  "foregroundColor": "rgb(0,0,0)",
+  "backgroundColor": "rgb(255,255,255)",
+  "labelColor": "rgb(228,0,43)",
+  "groupingIdentifier": "WEV_IDEwNn4gfn5MQVN_MTEvMTIvMjAyMCAxODozMH5CVVJ_MTEvMTIvMjAyMCAxOTo0MH5_",
+  "expirationDate": "2020-11-16T03:40:00+00:00",
+  "barcodes": [
+    {
+      "format": "PKBarcodeFormatAztec",
+      "message": "M1MILLENDER/KYLI       P3R7MF LASBURXE 0106 317Y006C0004 147>1180  0317BXE 000000000000029569308125718000      3081257180          ",
+      "messageEncoding": "UTF-8"
+    }
+  ],
+  "boardingPass": {
+    "headerFields": [
+      {
+        "key": "flight-number",
+        "label": "FlightNumber",
+        "value": "XE-106"
+      }
+    ],
+    "primaryFields": [
+      {
+        "key": "origin",
+        "label": "Origin",
+        "value": "LAS"
+      },
+      {
+        "key": "destination",
+        "label": "Destination",
+        "value": "BUR"
+      }
+    ],
+    "secondaryFields": [
+      {
+        "key": "passenger-name",
+        "label": "PassengerName",
+        "value": "Kyli Millender"
+      }
+    ],
+    "auxiliaryFields": [
+      {
+        "key": "boarding-time",
+        "label": "BoardingTime",
+        "value": "11/12/2020 6:15 PM"
+      },
+      {
+        "key": "seat",
+        "label": "Seat",
+        "value": "6C"
+      }
+    ],
+    "backFields": [
+      {
+        "key": "record-locator",
+        "label": "RecordLocator",
+        "value": "P3R7MF"
+      },
+      {
+        "key": "arriving-time",
+        "label": "ArrivalTime",
+        "value": "11/12/2020 7:40 PM"
+      },
+      {
+        "key": "ssrs",
+        "label": "SSRs",
+        "value": "-"
+      },
+      {
+        "key": "product-class",
+        "label": "ProductClass",
+        "value": "Hop On"
+      }
+    ],
+    "transitType": "PKTransitTypeAir"
+  }
 }

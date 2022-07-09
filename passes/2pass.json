@@ -1,1 +1,149 @@
-{"boardingPass":{"headerFields":[{"key":"date","value":"2019-09-21T15:15+02:00","label":"date","textAlignment":"PKTextAlignmentRight","dateStyle":"PKDateStyleShort","ignoresTimeZone":true,"isRelative":false,"timeStyle":"PKDateStyleNone"}],"primaryFields":[{"key":"departure_time","value":"2019-09-21T15:15+02:00","textAlignment":"PKTextAlignmentCenter","dateStyle":"PKDateStyleNone","ignoresTimeZone":true,"isRelative":false,"timeStyle":"PKDateStyleShort"},{"key":"arrival_time","value":"2019-09-21T20:50+02:00","textAlignment":"PKTextAlignmentCenter","dateStyle":"PKDateStyleNone","ignoresTimeZone":true,"isRelative":false,"timeStyle":"PKDateStyleShort"}],"secondaryFields":[{"key":"line_data","value":"2030 Las Vegas Downtown (1st St)","label":"line"}],"auxiliaryFields":[{"key":"departure_station","value":"LA Downtown","label":"departure","textAlignment":"PKTextAlignmentLeft"},{"key":"arrival_station","value":"Las Vegas Strip (Las Vegas Blvd)","label":"arrival","textAlignment":"PKTextAlignmentRight"}],"backFields":[{"key":"passengers","value":"passenger_list","label":"passengers_label"},{"key":"seats","value":"Free Seating (in the designated zone)","label":"seats"},{"key":"booking_number","value":"1055867774","label":"booking_number"},{"key":"info_block_1","value":"agb-passenger-station-arrival"},{"key":"info_block_2","value":"agb-ticket-expires"},{"key":"info_block_3","value":"mobile-luggage-info"},{"key":"info_block_4","value":"mobile-rebooking"},{"key":"info_block_5","value":"mobile-help-info"}],"transitType":"PKTransitTypeBus"},"serialNumber":"105586777496100321:26388:26708","description":"Ticket from Los Angeles (Downtown) to Las Vegas Strip (Las Vegas Blvd) on 2019-09-21 15:15:00","formatVersion":1,"locations":[{"latitude":34.056806625936,"longitude":-118.23216451457,"relevantText":"departure_loc_relevance"}],"relevantDate":"2019-09-21T15:15:00-07:00","barcode":{"format":"PKBarcodeFormatQR","message":"https:\/\/shop.flixbus.de\/pdfqr\/1055867774\/qtyjmuw713fh3ukpln1otp0shrqxma1cim34bair1xqluar8en?mfb_source=passbook","messageEncoding":"iso-8859-1","altText":"1055867774"},"backgroundColor":"rgb(115, 215, 0)","foregroundColor":"rgb(255, 255, 255)","labelColor":"rgb(77, 143, 0)","passTypeIdentifier":"pass.de.flixbus","teamIdentifier":"ZYSQ942W4A","organizationName":"LA Downtown - Las Vegas Strip (Las Vegas Blvd)","expirationDate":"2019-09-22T15:15:00-07:00","groupingIdentifier":"1055867774","associatedStoreIdentifiers":[778437357]}
+
+
+
+{
+   "serialNumber":"843185571",
+   "formatVersion":1,
+   "passTypeIdentifier":"pass.com.southwest.MobileBoardingPass",
+   "associatedStoreIdentifiers":[344542975],
+   "teamIdentifier":"2QHT4F69Y7",
+   "description":"description",
+   "locations": [
+          {
+           "latitude" : 33.4357,
+           "longitude" : -111.998,
+           "relevantText" : "relevantText"
+         }
+        ],
+   "expirationDate":"2018-08-26T18:41:42+00:00",
+   "barcode":{
+      "message":"M1MILLENDER/KYLI      EVCTIH8 PHXLASWN 0473 236Y0B240120 348>6180 M    BWN              2A             3    WN 418375462            ^460MEUCIQD+HaK+lzlc0vrls0OjilqinuKOR9uoawpjjASBnVeH7gIgM1CYTpwdRiF0DsFaT7GkCLs1rEqEWShN3KMxxBT/ZAA=",
+      "format":"PKBarcodeFormatAztec",
+      "messageEncoding":"iso-8859-1"
+   },
+   "organizationName":"Southwest Airlines",
+   "groupingIdentifier":"VCTIH8",
+   "logoText":"",
+   "foregroundColor":"rgb(255, 255, 255)",
+   "backgroundColor":"rgb(48, 76, 178)",
+   "labelColor":"rgb(255, 191, 39)",
+
+   "boardingPass":{
+      "transitType":"PKTransitTypeAir",
+      "headerFields":[
+         {
+            "key":"gate",
+            "label":"gateHeading",
+            "value":"C19",
+            "changeMessage":"gatechangeMessage"
+         },
+		 {
+            "key":"flight",
+            "label":"flightHeading",
+            "value":"473",
+            "changeMessage":"flightchangeMessage"
+         }
+		
+      ],
+      "primaryFields":[
+         {
+            "key":"source",
+            "label":"PHOENIX",
+            "value":"PHX",
+            "changeMessage":"sourcechangeMessage"
+         },
+         {
+            "key":"destination",
+            "label":"LAS VEGAS",
+            "value":"LAS",
+            "changeMessage":"destinationchangeMessage"
+         }
+      ],
+      "secondaryFields":[         
+         {
+            "key":"passenger",
+            "label":"passengerHeading",
+            "value":"Millender/Kyli",
+            "changeMessage":"passengerchangeMessage"
+         },
+        {
+            "key":"confirmation",
+            "label":"statusHeading",
+            "value":"--",
+            "textAlignment":"PKTextAlignmentRight",
+            "changeMessage":"statuschangeMessage"
+         }],
+              
+      "auxiliaryFields":[
+         {
+            "key":"boards",
+            "label":"boardsHeading",
+            "value":"05:20 PM",
+            "changeMessage":"boardschangeMessage"
+         },
+		 {
+            "key":"departs",
+            "label":"departsHeading",
+            "value":"05:50 PM",
+            "changeMessage":"departschangeMessage"
+         },
+         {
+            "key":"group",
+            "label":"groupHeading",
+            "value":"B",
+            "textAlignment":"PKTextAlignmentRight",
+            "changeMessage":"groupchangeMessage"
+         },
+         {
+            "key":"position",
+            "label":"positionHeading",
+            "value":"24",
+            "textAlignment":"PKTextAlignmentRight",
+            "changeMessage":"positionchangeMessage"
+         }
+      ],
+	"backFields" : [
+			{
+			"key":"flightDate",			
+			"label":"flightDate",
+			"value":"Friday, Aug 24, 2018"
+			},
+			{
+			"key":"departureTime",			
+			"label":"departureTime",
+			"value":"departureTimeText"
+			},
+			{
+			"key":"confNum",			
+			"label":"confNum",
+			"value":"VCTIH8"
+			},
+			{
+			"key":"rrNum",			
+			"label":"rrNum",
+			"value":"418375462"
+			},
+			{
+			"key":"fareType",			
+			"label":"fareType",
+			"value":"Anytime"
+			},
+			{
+			"key":"coupon",			
+			"label":"coupon",
+						"value":"No"
+						},
+			{
+			"key":"specialAssistance",			
+			"label":"specialAssistance",
+			"value":"--"
+			},
+			{
+			"key":"SouthwestWishes",			
+			"label":"southwestWishes",
+			"value":"southwestWishesText"
+			}
+    ]	
+    
+   }
+}

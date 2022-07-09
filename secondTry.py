@@ -1,8 +1,10 @@
-import pandas as pd
+#import pandas as pd
 from zipfile import ZipFile
 import json
 import os
 import shutil
+import tkinter as tk
+import tkinter.filedialog as fdi
 
 
 def json2csv(passJson):
@@ -17,17 +19,26 @@ def json2csv(passJson):
 
 def unzipper():
     # assign directory
-    dir1 = 'pkpass'
+
+    root = tk.Tk()
+    filez = fdi.askopenfilenames(parent=root, title='Choose a file')
+    print(filez)
+
+    """     Tk().withdraw() # we don't want a full GUI, so keep the root window from appearing
+    fn = askopenfilename() # show an "Open" dialog box and return the path to the selected file
+    print(fn) """
+
+    #dir1 = 'pkpass' - replaced with user prompt
     dir2 = 'passes'
     dir3 = 'unzipped'
     j = 0
 
-    for filename in os.listdir(dir1):
-        f = os.path.join(dir1, filename)
+    for filename in filez:
+        #f = os.path.join(dir1, filename)
 
-        if os.path.isfile(f):
+        if os.path.isfile(filename):
 
-            with ZipFile(f, 'r') as zipObject:
+            with ZipFile(filename, 'r') as zipObject:
                 listOfFileNames = zipObject.namelist()
 
                 for passName in listOfFileNames:
