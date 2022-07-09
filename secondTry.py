@@ -1,10 +1,11 @@
-import pandas as pd
 from zipfile import ZipFile
+import uuid
 import json
 import os
 import shutil
 import tkinter as tk
 import tkinter.filedialog as fdi
+import pandas as pd
 
 
 def json2csv(passJson):
@@ -12,7 +13,7 @@ def json2csv(passJson):
         data = json.load(read_file)
 
     df = pd.json_normalize(data)
-    df.to_csv(r'outputFile.csv', index = None)
+    df.to_csv(r'outputFile.csv', index = None) #NEED TO CREATE A NEW CSV FOR EVERY JSON
 
     #print(data)
     print("wat?")
@@ -46,8 +47,9 @@ def unzipper():
                     if passName == "pass.json":
                         j += 1
                         zipObject.extract(passName, dir3)
-                        shutil.move((dir3 + "/" + passName), (dir2 + "/" + str(j) + passName)) 
-                        thisFile = dir2 + "/" + str(j) + passName
-                        #json2csv(thisFile) 
+                        uuidPass = (str(uuid.uuid1())[0:14]) + ".json"
+                        shutil.move((dir3 + "/" + passName), (dir2 + "/" + uuidPass))#str(j) + passName)) 
+                        thisFile = dir2 + "/" + uuidPass
+                        json2csv(thisFile) 
 
 unzipper()

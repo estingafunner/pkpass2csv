@@ -1,4 +1,4 @@
-Ok so the data I want to extract is:
+ Ok so the data I want to extract is:
 - flight number
 - depart
 - destination
