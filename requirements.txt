@@ -1,0 +1,8 @@
+######## Requirements ##########
+
+zipfile
+json
+os
+shutil
+tkinter
+pandas

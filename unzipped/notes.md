@@ -1,0 +1,14 @@
+Ok so the data I want to extract is:
+- flight number
+- depart
+- destination
+- passenger
+- class
+- departs back
+- arrives back
+- departs back
+- arrives back
+- operated by
+- confirmation #
+- ticket #
+- transit type
