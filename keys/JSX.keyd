@@ -1,0 +1,10 @@
+headerFields, flight-number
+primaryFields, origin
+primaryFields, destination
+secondaryFields, passenger-name
+backFields, product-class
+NONE
+NONE
+NONE
+NONE
+NONE

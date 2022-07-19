@@ -1,0 +1,10 @@
+boardingPass, flightNumber
+primaryFields, depart
+primaryFields, destination
+secondaryFields, passenger
+secondaryFields, class
+NONE
+NONE
+NONE
+backFields, confirmationNumber
+backFields, ticketNumberBack

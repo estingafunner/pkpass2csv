@@ -37,6 +37,6 @@ def unzipper():
                         zipObject.extract(passName, dir3)
                         shutil.move((dir3 + "/" + passName), (dir2 + "/" + str(j) + passName)) 
                         thisFile = dir2 + "/" + str(j) + passName
-                        #json2csv(thisFile) 
+                        json2csv(thisFile) 
 
 unzipper()

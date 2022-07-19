@@ -1,19 +1,10 @@
-headerField
-
-departureStation
-
-arrivalStation
-
-secondaryFieldName
-
+headerFields, headerField
+headerFields, departureStation
+headerFields, arrivalStation
+secondaryFields, secondaryFieldName
 NONE
-
 NONE
-
 NONE
-
 NONE
-
 NONE
-
 NONE
