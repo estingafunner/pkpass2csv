@@ -1,0 +1,30 @@
+"from"="De la";
+"to"="La";
+"departure"="Plecare";
+"arrival"="Sosire";
+"date"="Data";
+"line"="Traseu de autocar";
+"checkin"="Înregistrare";
+"trip"="Călătorie";
+"departure_address"="Adresa de plecare";
+"departure_date"="Data plecării";
+"transfer"="Transfer";
+"passengers_label"="Pasageri";
+"booking_number"="Număr de achiziție";
+"seats"="Locuri";
+"departure_loc_relevance"="Your trip to Las Vegas Strip (Las Vegas Blvd) at -0700Sat, 21 Sep 2019 15:15:00 -0700pm:15";
+"passenger_list"="Kyli Millender";
+"agb-passenger-station-arrival"="Te rugăm să te prezinți în stația de autocar cu 15 minute înainte de ora plecării.";
+"agb-ticket-expires"="Biletul tău expiră la ora plecării și nu poate fi revândut.";
+"mobile-luggage-info"="Etichetează-le cu numele și adresa ta.
+
+Următoarele bagaje sunt incluse în tariful biletului:
+
+ - 1 bagaj de mână (42x30x18 cm, max. 7 kg) 
+ - 1 bagaj mare (80x50x30 cm, max. 20 kg)
+
+Ai nevoie de mai mult? 
+Adaugă maximum 1 bagaj suplimentar (max. 20 kg) și maximum 1 bagaj supradimensionat (max. 30 kg) în momentul cumpărării biletului sau ulterior, prin serviciul de asistență telefonică.";
+"mobile-rebooking"="Pentru a schimba comanda, te rugăm să accesezihttps://shop.global.flixbus.com/rebooking
+și să te înregistrezi cu numărul tău de achiziție și adresa de e-mail.";
+"mobile-help-info"="Întrebări frecvente: https://global.flixbus.com/service/faq";

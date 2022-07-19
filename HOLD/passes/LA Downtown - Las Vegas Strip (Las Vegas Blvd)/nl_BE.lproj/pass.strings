@@ -1,0 +1,29 @@
+"from"="Van";
+"to"="Naar";
+"departure"="Vertrek";
+"arrival"="Aankomst";
+"date"="Datum";
+"line"="Route";
+"checkin"="Check-in om";
+"trip"="Reis";
+"departure_address"="Vertrekplaats";
+"departure_date"="Vertrekdatum";
+"transfer"="Overstappen";
+"passengers_label"="Passagiers";
+"booking_number"="Boekingsnummer";
+"seats"="Zitplaatsen";
+"departure_loc_relevance"="Your trip to Las Vegas Strip (Las Vegas Blvd) at 15u15";
+"passenger_list"="Kyli Millender";
+"agb-passenger-station-arrival"="Zorg dat je 15 minuten voor vertrek bij de bushalte bent.";
+"agb-ticket-expires"="Je ticket verloopt bij de vertrektijd en is zo opnieuw te koop.";
+"mobile-luggage-info"="Schrijf je naam en adres op het label. 
+
+De volgende stukken bagage vallen onder de ticketprijs:
+
+ - 1 stuk handbagage (42x30x18 cm, max. 7 kg)
+ - 1 stuk bagage (80x50x30 cm, max. 20kg)
+
+Heb je meer nodig? 
+Voeg max. 1 stuks extra bagage (max. 20 kg) en 1 stuks bijzondere bagage (max. 30 kg) toe als je je ticket boekt, of neem na het boeken contact op met de klantenservice.";
+"mobile-rebooking"="Om de boeking te wijzigen, ga je naar https://shop.global.flixbus.com/rebooking en log je in met je boekingsnummer en e-mailadres.";
+"mobile-help-info"="Veelgestelde vragen: https://global.flixbus.com/service/faq";

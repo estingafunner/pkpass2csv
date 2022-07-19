@@ -1,0 +1,29 @@
+"from"="Iz";
+"to"="V";
+"departure"="Odhod";
+"arrival"="Prihod";
+"date"="Datum";
+"line"="Avtobusna proga";
+"checkin"="Prijava";
+"trip"="Pot";
+"departure_address"="Naslov odhoda";
+"departure_date"="Datum odhoda";
+"transfer"="Prestopanje";
+"passengers_label"="Potniki";
+"booking_number"="Številka rezervacije";
+"seats"="sedeži";
+"departure_loc_relevance"="Your trip to Las Vegas Strip (Las Vegas Blvd) at 15:15";
+"passenger_list"="Kyli Millender";
+"agb-passenger-station-arrival"="Prosimo, da si na avtobusni postaji 15 minut pred odhodom.";
+"agb-ticket-expires"="Tvoja vozovnica poteče ob odhodu in jo lahko ponovno prodamo.";
+"mobile-luggage-info"="Prosimo, označi prtljago s svojim imenom in naslovom.
+
+Voznina na vozovnici vključuje naslednjo vrsto prtljage:
+
+ - 1 kos ročne prtljage (42x30x18 cm, največ 7 kg) 
+ - 1 kos običajne prtljage (80x50x30 cm, največ 20 kg)
+
+Potrebuješ več prtljage? 
+Dodaj največ 1 kos dodatne prtljage (največ 20 kg) ter največ 1 kos posebne prtljage (največ 30 kg) med rezervacijo vozovnice ali kasneje tako, da pokličeš naš info center.";
+"mobile-rebooking"="Rezervacijo lahko spremeniš tako, da greš na https://shop.global.flixbus.com/rebooking in se registriraš s številko rezervacije in svojim e-naslovom.";
+"mobile-help-info"="Pogosta vprašanja: https://global.flixbus.com/service/faq";

@@ -1,0 +1,30 @@
+"from"="Od";
+"to"="Do";
+"departure"="Polazak";
+"arrival"="Dolazak";
+"date"="Datum";
+"line"="Autobuska linija";
+"checkin"="Prijavljivanje";
+"trip"="Putovanje";
+"departure_address"="Adresa polaska";
+"departure_date"="Datum polaska";
+"transfer"="Presedanje";
+"passengers_label"="Putnici";
+"booking_number"="Broj rezervacije";
+"seats"="Sedišta";
+"departure_loc_relevance"="Your trip to Phoenix Airport at 23:55";
+"passenger_list"="Kyli Millender";
+"agb-passenger-station-arrival"="Dođi na autobusku stanicu 15 minuta pre polaska.";
+"agb-ticket-expires"="Karta ističe u vreme polaska i biće ponovo stavljena u prodaju.";
+"mobile-luggage-info"="Napiši na prtljagu svoje ime i adresu.
+
+Sledeći prtljag je uključen u cenu karte:
+
+ - 1 komad ručnog prtljaga (42x30x18 cm, maks. 7 kg) 
+ - 1 komad prtljaga (80x50x30 cm, maks. 20 kg)
+
+Moraš da poneseš više? 
+Dodaj najviše 1 dodatni komad prtljaga (maks. 20 kg) i najviše 1 komad prtljaga nestandardne veličine (maks. 30 kg) kada rezervišeš kartu ili naknadno preko info telefona.";
+"mobile-rebooking"="Za promenu rezervacije poseti https://shop.global.flixbus.com/rebooking
+ i registruj se sa brojem rezervacije i imejl adresom.";
+"mobile-help-info"="FAQ: https://global.flixbus.com/service/faq";
