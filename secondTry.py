@@ -49,14 +49,18 @@ def keyd(passJson2):
             break
 
     completeList = []
-    
-    for j in range(len(keysList)):
+    keys = ""
+    keydRange = range(len(keysList))
+    for j in keydRange:
         keyd = keysList[keyRow][j+1]
         #keyd = keyd.strip('\"')
-        for k in range(len(keyd)):
-            keys = ######3YOU"RE RIGHT HERE 2035 19 7 2022
-        completeList.append(dataJson[keyd.strip('\"')])
-        print(completeList)
+        keys = keys + "[" + keyd + "]"
+        print(keys)
+        ''' for k in keyd:
+            "
+            print(keys) '''
+    completeList.append(dataJson[keys])
+    print(completeList)
 
     with open('outputFile.csv','a') as f:
         writer = csv.writer(f)
