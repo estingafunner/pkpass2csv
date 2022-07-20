@@ -5,4 +5,4 @@ Frontier,"headerFields, headerField","headerFields, departureStation","headerFie
 JSX,"headerFields, flight-number","primaryFields, origin","primaryFields, destination","secondaryFields, passenger-name","backFields, product-class",,,
 Southwest Airlines,"headerFields, flight","primaryFields, source","primaryFields, destination","secondaryFields, passenger","auxiliaryFields, group",,"backFields, confNum","backFields, rrNum"
 United Airlines,"headerFields, flight","primaryFields, origin","primaryFields, destination","secondaryFields, passenger","auxiliaryFields, group","backFields, operatedby","backFields, confirmation",
-Alaska Airlines,"auxiliaryFields, flightNumber","primaryFields, departureAirport","primaryFields, arrivalAirport"," ""secondaryFields, passengerName""","auxiliaryFields, boardingGroup",,,
+Alaska Airlines, "boardingPass, auxiliaryFields, 1, value","primaryFields, departureAirport","primaryFields, arrivalAirport"," ""secondaryFields, passengerName""","auxiliaryFields, boardingGroup",,,

@@ -24,7 +24,7 @@ def keyd(passJson2):
     #print(dataJson)
     print(dataJson["organizationName"]) 
     
-    #dataJson["boardingPass"]["primaryFields"][0]["value"])
+    #dataJson["boardingPass"]["primaryFields"][0]["value"]
     ##################################THIS IS HOW YOU USE JSON#####################
 
     keysList = []
@@ -52,7 +52,10 @@ def keyd(passJson2):
     
     for j in range(len(keysList)):
         keyd = keysList[keyRow][j+1]
-        completeList.append(dataJson[keyd])
+        #keyd = keyd.strip('\"')
+        for k in range(len(keyd)):
+            keys = ######3YOU"RE RIGHT HERE 2035 19 7 2022
+        completeList.append(dataJson[keyd.strip('\"')])
         print(completeList)
 
     with open('outputFile.csv','a') as f:
