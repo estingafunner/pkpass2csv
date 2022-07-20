@@ -1,8 +1,10 @@
-/import pandas as pd
+import pandas as pd
 from zipfile import ZipFile
 import json
 import os
 import shutil
+import csv
+import pandas as pd
 
 
 def json2csv(passJson):
@@ -15,15 +17,55 @@ def json2csv(passJson):
     print("wat?")
 
 def keyd(passJson2):
+    
     with open(passJson2, "r") as read_file:
-        data = json.load(read_file)
-    df = pd.json_normalize(data)
+        dataJson = json.load(read_file)
+    #jsonData = pd.json_normalize(dataJson) I guess i dont need to normalize it?
+    print(dataJson['organizationName'])
 
-    #open pass.jsom file DONE
-    #open keys.csv file
-    #open outputFile.csv file
-    #read the value of organizationName in pass.json
-    #find match for organizationName.value in first column of keys.csv
+    keysList = []
+    with open('keys\keys.csv', newline='') as inputfile:
+        for row in csv.reader(inputfile):
+            keysList.append(row)
+    print(keysList)
+
+    """ outputList = []
+    with open('outputFile.csv', newline='') as inputfile:
+        for row in csv.reader(inputfile):
+            outputList.append(row[0])
+    print(outputList) """
+
+    airline = dataJson['organizationName']
+
+    for i in range(len(keysList)):  
+        print(keysList[i][0], end=" ") #printing first element of every row (airline name)
+        keyMatch = keysList[i][0]
+        if keyMatch == airline:
+            keyRow = i
+            break
+
+    completeList = []
+    for j in range(len(keysList[keyRow])):
+        completeList.append(dataJson[j])
+        print(completeList)
+
+    with open('outputFile.csv','a') as f:
+        writer = csv.writer(f)
+        writer.writerow(completeList)
+
+        
+
+    #loop through keysList, find match w/ dataJson['organizationName']
+
+
+    #open pass.jsom file DONE as dataJson
+    #open keys.csv file DONE as keysList
+    #open outputFile.csv file DONE as outputList
+    #read the value of organizationName in pass.json DONE as airline
+        #json.loads()
+
+    #find match for organizationName.value in first column of keys.csv - DONE and defined 'keyRow'
+
     ##new direction:
         #if organizationName == airlilne
             #for each col in row(orgName's row)
@@ -66,8 +108,7 @@ def unzipper():
                         thisFile = dir2 + "/" + str(j) + passName
 
                         #HERE! 12:49 19-Jul-2022
-                        #keyd(thisFile)
-:                       
+                        keyd(thisFile)                     
                         #json2csv(thisFile) - probably done with that? may just use later?
 
 unzipper()

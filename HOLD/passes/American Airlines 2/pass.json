@@ -1,1 +1,122 @@
-{"formatVersion":1,"description":"American Airlines Flight 1378 on January 6th departing MIA","organizationName":"American Airlines","passTypeIdentifier":"pass.com.aa.boardingPass","serialNumber":"31bb510b08eebb78c0b174ac6599fb088e8969e73cc36b0bffd5284cf1a0ee33","teamIdentifier":"8RTCU3FQ7J","barcode":{"message":"M1MILLENDER/KYLI       HERCNJ MIALIRAA 1378 006 008B0001 148>218 MM    B                29   0000000000 2                           P3VPZvVxgb8M2ORx0BmqL0iCJFKJUDTm|ANmRz6HU1025C/PIk+RdSgGAXchGcrdOug==","format":"PKBarcodeFormatAztec","messageEncoding":"iso-8859-1"},"foregroundColor":"rgb(255, 255, 255)","backgroundColor":"rgb(0, 120, 210)","labelColor":"rgb(255, 255, 255)","associatedStoreIdentifiers":[382698565],"relevantDate":"2020-01-06T10:48-05:00","boardingPass":{"primaryFields":[{"label":"","key":"depart","value":"MIA"},{"label":"","key":"arrive","value":"LIR"}],"secondaryFields":[{"label":"","key":"passenger","value":"MILLENDER/KYLI"},{"key":"priorityaccess","value":" "}],"auxiliaryFields":[{"label":"SEAT","key":"seat","value":"8B"},{"label":"STATUS","key":"status","value":"On Time"},{"label":"TERM","key":"terminal","value":"North"},{"label":"DEPARTS","key":"boardingTime","value":"10:48 AM"}],"headerFields":[{"label":"FLIGHT","key":"flightNewName","value":"AA1378"},{"label":"GATE","key":"gate","value":"D1"}],"backFields":[{"label":"DATE","key":"date","value":"Mon Jan 6 2020"},{"label":"BOARDING TIME","key":"gateBoardingTime","value":"SEE AIRPORT MONITORS"},{"label":"RECORD LOCATOR","key":"record_locator","value":"HERCNJ"},{"label":"LENGTH","key":"length","value":"0 hrs 0 mins"},{"label":"WIFI AVAILABLE","key":"wifi","value":"No"},{"label":"AADVANTAGE® NUMBER","key":"aadvantage_number","value":""},{"label":"FOR HELP CONTACT","key":"companyName","value":"American Airlines Customer Relations\n4000 E. Sky Harbor Blvd.\nPhoenix, AZ 85034"}],"transitType":"PKTransitTypeAir"},"voided":false,"expirationDate":"2020-01-07T10:48-05:00","userInfo":{"silent":true}}
+{
+    "formatVersion": 1,
+    "description": "American Airlines Flight 1378 on January 6th departing MIA",
+    "organizationName": "American Airlines",
+    "passTypeIdentifier": "pass.com.aa.boardingPass",
+    "serialNumber": "31bb510b08eebb78c0b174ac6599fb088e8969e73cc36b0bffd5284cf1a0ee33",
+    "teamIdentifier": "8RTCU3FQ7J",
+    "barcode": {
+        "message": "M1MILLENDER/KYLI       HERCNJ MIALIRAA 1378 006 008B0001 148>218 MM    B                29   0000000000 2                           P3VPZvVxgb8M2ORx0BmqL0iCJFKJUDTm|ANmRz6HU1025C/PIk+RdSgGAXchGcrdOug==",
+        "format": "PKBarcodeFormatAztec",
+        "messageEncoding": "iso-8859-1"
+    },
+    "foregroundColor": "rgb(255, 255, 255)",
+    "backgroundColor": "rgb(0, 120, 210)",
+    "labelColor": "rgb(255, 255, 255)",
+    "associatedStoreIdentifiers": [
+        382698565
+    ],
+    "relevantDate": "2020-01-06T10:48-05:00",
+    "boardingPass": {
+        "primaryFields": [
+            {
+                "label": "",
+                "key": "depart",
+                "value": "MIA"
+            },
+            {
+                "label": "",
+                "key": "arrive",
+                "value": "LIR"
+            }
+        ],
+        "secondaryFields": [
+            {
+                "label": "",
+                "key": "passenger",
+                "value": "MILLENDER/KYLI"
+            },
+            {
+                "key": "priorityaccess",
+                "value": " "
+            }
+        ],
+        "auxiliaryFields": [
+            {
+                "label": "SEAT",
+                "key": "seat",
+                "value": "8B"
+            },
+            {
+                "label": "STATUS",
+                "key": "status",
+                "value": "On Time"
+            },
+            {
+                "label": "TERM",
+                "key": "terminal",
+                "value": "North"
+            },
+            {
+                "label": "DEPARTS",
+                "key": "boardingTime",
+                "value": "10:48 AM"
+            }
+        ],
+        "headerFields": [
+            {
+                "label": "FLIGHT",
+                "key": "flightNewName",
+                "value": "AA1378"
+            },
+            {
+                "label": "GATE",
+                "key": "gate",
+                "value": "D1"
+            }
+        ],
+        "backFields": [
+            {
+                "label": "DATE",
+                "key": "date",
+                "value": "Mon Jan 6 2020"
+            },
+            {
+                "label": "BOARDING TIME",
+                "key": "gateBoardingTime",
+                "value": "SEE AIRPORT MONITORS"
+            },
+            {
+                "label": "RECORD LOCATOR",
+                "key": "record_locator",
+                "value": "HERCNJ"
+            },
+            {
+                "label": "LENGTH",
+                "key": "length",
+                "value": "0 hrs 0 mins"
+            },
+            {
+                "label": "WIFI AVAILABLE",
+                "key": "wifi",
+                "value": "No"
+            },
+            {
+                "label": "AADVANTAGE® NUMBER",
+                "key": "aadvantage_number",
+                "value": ""
+            },
+            {
+                "label": "FOR HELP CONTACT",
+                "key": "companyName",
+                "value": "American Airlines Customer Relations\n4000 E. Sky Harbor Blvd.\nPhoenix, AZ 85034"
+            }
+        ],
+        "transitType": "PKTransitTypeAir"
+    },
+    "voided": false,
+    "expirationDate": "2020-01-07T10:48-05:00",
+    "userInfo": {
+        "silent": true
+    }
+}

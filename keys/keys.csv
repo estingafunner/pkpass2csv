@@ -1,7 +1,8 @@
-﻿airline,fliNum,depart,arrive,passenger,class,opBy,confNum,tickNum
+﻿﻿airline,fliNum,depart,arrive,passenger,class,opBy,confNum,tickNum
 American Airlines,"headerFields, flightNewName","primaryFields, depart","primaryFields, arrive","secondaryFields, passenger",,,,
 Fly Delta,"boardingPass, flightNumber","primaryFields, depart","primaryFields, destination","secondaryFields, passenger","secondaryFields, class",,"backFields, confirmationNumber","backFields, ticketNumberBack"
 Frontier,"headerFields, headerField","headerFields, departureStation","headerFields, arrivalStation","secondaryFields, secondaryFieldName",,,,
 JSX,"headerFields, flight-number","primaryFields, origin","primaryFields, destination","secondaryFields, passenger-name","backFields, product-class",,,
 Southwest Airlines,"headerFields, flight","primaryFields, source","primaryFields, destination","secondaryFields, passenger","auxiliaryFields, group",,"backFields, confNum","backFields, rrNum"
 United Airlines,"headerFields, flight","primaryFields, origin","primaryFields, destination","secondaryFields, passenger","auxiliaryFields, group","backFields, operatedby","backFields, confirmation",
+Alaska Airlines,"auxiliaryFields, flightNumber","primaryFields, departureAirport","primaryFields, arrivalAirport", "secondaryFields, passengerName","auxiliaryFields, boardingGroup"

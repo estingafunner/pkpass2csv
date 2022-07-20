@@ -1,0 +1,149 @@
+
+
+
+{
+   "serialNumber":"843185571",
+   "formatVersion":1,
+   "passTypeIdentifier":"pass.com.southwest.MobileBoardingPass",
+   "associatedStoreIdentifiers":[344542975],
+   "teamIdentifier":"2QHT4F69Y7",
+   "description":"description",
+   "locations": [
+          {
+           "latitude" : 33.4357,
+           "longitude" : -111.998,
+           "relevantText" : "relevantText"
+         }
+        ],
+   "expirationDate":"2018-08-26T18:41:42+00:00",
+   "barcode":{
+      "message":"M1MILLENDER/KYLI      EVCTIH8 PHXLASWN 0473 236Y0B240120 348>6180 M    BWN              2A             3    WN 418375462            ^460MEUCIQD+HaK+lzlc0vrls0OjilqinuKOR9uoawpjjASBnVeH7gIgM1CYTpwdRiF0DsFaT7GkCLs1rEqEWShN3KMxxBT/ZAA=",
+      "format":"PKBarcodeFormatAztec",
+      "messageEncoding":"iso-8859-1"
+   },
+   "organizationName":"Southwest Airlines",
+   "groupingIdentifier":"VCTIH8",
+   "logoText":"",
+   "foregroundColor":"rgb(255, 255, 255)",
+   "backgroundColor":"rgb(48, 76, 178)",
+   "labelColor":"rgb(255, 191, 39)",
+
+   "boardingPass":{
+      "transitType":"PKTransitTypeAir",
+      "headerFields":[
+         {
+            "key":"gate",
+            "label":"gateHeading",
+            "value":"C19",
+            "changeMessage":"gatechangeMessage"
+         },
+		 {
+            "key":"flight",
+            "label":"flightHeading",
+            "value":"473",
+            "changeMessage":"flightchangeMessage"
+         }
+		
+      ],
+      "primaryFields":[
+         {
+            "key":"source",
+            "label":"PHOENIX",
+            "value":"PHX",
+            "changeMessage":"sourcechangeMessage"
+         },
+         {
+            "key":"destination",
+            "label":"LAS VEGAS",
+            "value":"LAS",
+            "changeMessage":"destinationchangeMessage"
+         }
+      ],
+      "secondaryFields":[         
+         {
+            "key":"passenger",
+            "label":"passengerHeading",
+            "value":"Millender/Kyli",
+            "changeMessage":"passengerchangeMessage"
+         },
+        {
+            "key":"confirmation",
+            "label":"statusHeading",
+            "value":"--",
+            "textAlignment":"PKTextAlignmentRight",
+            "changeMessage":"statuschangeMessage"
+         }],
+              
+      "auxiliaryFields":[
+         {
+            "key":"boards",
+            "label":"boardsHeading",
+            "value":"05:20 PM",
+            "changeMessage":"boardschangeMessage"
+         },
+		 {
+            "key":"departs",
+            "label":"departsHeading",
+            "value":"05:50 PM",
+            "changeMessage":"departschangeMessage"
+         },
+         {
+            "key":"group",
+            "label":"groupHeading",
+            "value":"B",
+            "textAlignment":"PKTextAlignmentRight",
+            "changeMessage":"groupchangeMessage"
+         },
+         {
+            "key":"position",
+            "label":"positionHeading",
+            "value":"24",
+            "textAlignment":"PKTextAlignmentRight",
+            "changeMessage":"positionchangeMessage"
+         }
+      ],
+	"backFields" : [
+			{
+			"key":"flightDate",			
+			"label":"flightDate",
+			"value":"Friday, Aug 24, 2018"
+			},
+			{
+			"key":"departureTime",			
+			"label":"departureTime",
+			"value":"departureTimeText"
+			},
+			{
+			"key":"confNum",			
+			"label":"confNum",
+			"value":"VCTIH8"
+			},
+			{
+			"key":"rrNum",			
+			"label":"rrNum",
+			"value":"418375462"
+			},
+			{
+			"key":"fareType",			
+			"label":"fareType",
+			"value":"Anytime"
+			},
+			{
+			"key":"coupon",			
+			"label":"coupon",
+						"value":"No"
+						},
+			{
+			"key":"specialAssistance",			
+			"label":"specialAssistance",
+			"value":"--"
+			},
+			{
+			"key":"SouthwestWishes",			
+			"label":"southwestWishes",
+			"value":"southwestWishesText"
+			}
+    ]	
+    
+   }
+}
