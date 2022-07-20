@@ -19,10 +19,13 @@ def json2csv(passJson):
 def keyd(passJson2):
     
     with open(passJson2, "r") as read_file:
-        dataJson = json.load(read_file)
+        dataJson = json.loads(read_file.read())
     #jsonData = pd.json_normalize(dataJson) I guess i dont need to normalize it?
-    print(dataJson)
-    print(dataJson['primaryFields'])
+    #print(dataJson)
+    print(dataJson["organizationName"]) 
+    
+    #dataJson["boardingPass"]["primaryFields"][0]["value"])
+    ##################################THIS IS HOW YOU USE JSON#####################
 
     keysList = []
     with open('keys\keys.csv', newline='') as inputfile:
