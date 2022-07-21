@@ -50,16 +50,19 @@ def keyd(passJson2):
 
     completeList = []
     keys = ""
+    keyd = []
     keydRange = range(len(keysList))
     for j in keydRange:
-        keyd = keysList[keyRow][j+1]
+        keyd = list((keysList[keyRow][j+1]).split(", "))
         #keyd = keyd.strip('\"')
-        keys = keys + "[" + keyd + "]"
+        print(keyd)
+        for k in keyd:
+            keys = keys + "['" + k + "']"
+            print(keys)
+        #keyf = tuple(keys) ####DOES NOT WORK, tuple breaks down into indiv char
         print(keys)
-        ''' for k in keyd:
-            "
-            print(keys) '''
-    completeList.append(dataJson[keys])
+        print(dataJson['boardingPass']['auxiliaryFields'][1]['value']) ### numeric values need to be handled without quotation
+        completeList.append(dataJson[keys])
     print(completeList)
 
     with open('outputFile.csv','a') as f:
