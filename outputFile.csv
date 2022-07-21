@@ -1,2 +1,19 @@
-description,formatVersion,organizationName,passTypeIdentifier,serialNumber,teamIdentifier,associatedStoreIdentifiers,expirationDate,locations,barcodes,backgroundColor,foregroundColor,labelColor,authenticationToken,webServiceURL,sharingProhibited,boardingPass.auxiliaryFields,boardingPass.backFields,boardingPass.headerFields,boardingPass.primaryFields,boardingPass.secondaryFields,boardingPass.transitType,barcode.format,barcode.message,barcode.messageEncoding
-Alaska Airlines Boarding Pass,1,Alaska Airlines,pass.com.alaskaair.travelapp,609b49f2-5059-411e-b2d7-9dc3d009fa70,QA9M4HT8AK,[356143077],2020-09-30T01:52:02Z,"[{'latitude': 33.941389, 'longitude': -118.401944, 'relevantText': 'Tap to view boarding pass.'}]","[{'format': 'PKBarcodeFormatAztec', 'message': 'M1MILLENDER/KYLI      EAJNFVU LAXSEAAS 0881 272P003F0000 14d>2181MM    BAS              25             3    AS 178086790       Z    00010^460MEUCIQC56hcKh/AO3xleWDaPb/3NYAvQN9Ft7v4FoArRwJ3WaAIgPSe79lHf+/Cg5n5x3FAHvP/a0CAj3hmUI5/144JRE3E=', 'messageEncoding': 'iso-8859-1'}]","rgb(245,245,245)","rgb(1,66,106)","rgb(60,59,63)",8447df95-ff6f-4281-9cff-8ebb0a46f2ba,https://wallet-api.urbanairship.com/apple,False,"[{'key': 'departureTime', 'value': '2020-09-28T11:15:00Z', 'label': 'Date', 'textAlignment': 'PKTextAlignmentNatural', 'dateStyle': 'PKDateStyleShort', 'ignoresTimeZone': True, 'timeStyle': 'PKDateStyleNone'}, {'key': 'flightNumber', 'value': '881', 'label': 'Flight', 'textAlignment': 'PKTextAlignmentNatural'}, {'key': 'boardingGroup', 'value': 'First Class', 'label': 'Group', 'textAlignment': 'PKTextAlignmentNatural'}, {'key': 'seatNumber', 'value': '3F', 'changeMessage': ""You're now sitting in %@."", 'label': 'Seat', 'textAlignment': 'PKTextAlignmentNatural'}]","[{'key': 'Merchant Website', 'value': 'http://www.alaskaair.com', 'label': 'Merchant Website', 'textAlignment': 'PKTextAlignmentNatural'}, {'key': 'Contact Information', 'value': 'Alaska Airlines\nP.O. Box 68900\nSeattle, WA 98198\n1-800-252-7522\n\n<a href=""mailto:iphoneapp@alaskaair.com"">iphoneapp@alaskaair.com</a>', 'label': 'Contact Information', 'textAlignment': 'PKTextAlignmentNatural'}]","[{'key': 'boardingTime', 'value': '2020-09-28T10:35:00Z', 'label': 'Boards', 'textAlignment': 'PKTextAlignmentNatural', 'dateStyle': 'PKDateStyleNone', 'ignoresTimeZone': True, 'timeStyle': 'PKDateStyleShort'}, {'key': 'departureGate', 'value': '64A', 'label': 'Gate', 'textAlignment': 'PKTextAlignmentRight'}]","[{'key': 'departureAirport', 'value': 'LAX', 'label': 'Los Angeles', 'textAlignment': 'PKTextAlignmentNatural'}, {'key': 'arrivalAirport', 'value': 'SEA', 'label': 'Seattle', 'textAlignment': 'PKTextAlignmentNatural'}]","[{'key': 'passengerName', 'value': 'Kyli Millender', 'label': 'passenger', 'textAlignment': 'PKTextAlignmentNatural'}, {'key': 'frequentFlyerNumber', 'value': '*****6790', 'label': 'MP#', 'textAlignment': 'PKTextAlignmentNatural'}]",PKTransitTypeAir,PKBarcodeFormatAztec,M1MILLENDER/KYLI      EAJNFVU LAXSEAAS 0881 272P003F0000 14d>2181MM    BAS              25             3    AS 178086790       Z    00010^460MEUCIQC56hcKh/AO3xleWDaPb/3NYAvQN9Ft7v4FoArRwJ3WaAIgPSe79lHf+/Cg5n5x3FAHvP/a0CAj3hmUI5/144JRE3E=,iso-8859-1
+Airline, Flight Number, Departure Airport, Arrival Airport, Passenger Name, Class, Departure Time, Arrival Time, Operated By, Confirmation Number, Ticket Number,
+Alaska Airlines,881,LAX,SEA,Kyli Millender,First Class, , , , , 
+
+American Airlines,AA1378,MIA,LIR,MILLENDER/KYLI, , , , , , 
+
+Fly Delta,DL1395,AUS,LAX,KYLI ROCHELLE MILLENDER,Q, ,GUOEWD,0062429778525,"AUS: Austin, TX, US
+3:40PM, Aug 19, 2020","LAX: Los Angeles, CA, US
+4:43PM, Aug 19, 2020"
+
+Frontier,Flight  404,LAX,DEN,KYLI MILLENDER, , , , ,12:54PM, 
+
+JSX,XE-106,LAS,BUR,Kyli Millender,Hop On, , , ,11/12/2020 6:15 PM,11/12/2020 7:40 PM
+
+Southwest Airlines,261,LAS,PHX,Millender/Kyli,B, ,TBJHOW,418375462,09:35 AM, 
+
+Southwest Airlines,473,PHX,LAS,Millender/Kyli,B, ,VCTIH8,418375462,05:20 PM, 
+
+United Airlines,UA 5451,MFR,SFO,MILLENDER/KYLI,1,SKYWEST DBA UNITED EXPRESS,BC53SL, ,6:15 AM,7:41 AM
+

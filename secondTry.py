@@ -12,7 +12,6 @@ def json2csv(passJson):
         data = json.load(read_file)
     df = pd.json_normalize(data)
     df.to_csv(r'outputFile.csv', index = None)
-
     #print(data)
     print("wat?")
 
@@ -22,7 +21,7 @@ def keyd(passJson2):
         dataJson = json.loads(read_file.read())
     #jsonData = pd.json_normalize(dataJson) I guess i dont need to normalize it?
     #print(dataJson)
-    print(dataJson["organizationName"]) 
+    #print(dataJson["organizationName"]) 
     
     #dataJson["boardingPass"]["primaryFields"][0]["value"]
     ##################################THIS IS HOW YOU USE JSON#####################
@@ -31,66 +30,52 @@ def keyd(passJson2):
     with open('keys\keys.csv', newline='') as inputfile:
         for row in csv.reader(inputfile):
             keysList.append(row)
-    print(keysList)
+    #print(keysList)
 
-    """ outputList = []
-    with open('outputFile.csv', newline='') as inputfile:
-        for row in csv.reader(inputfile):
-            outputList.append(row[0])
-    print(outputList) """
+    completeList = []
+    keyd = []
 
     airline = dataJson['organizationName']
-
+    completeList.append(airline)
     for i in range(len(keysList)):  
-        print(keysList[i][0], end=" ") #printing first element of every row (airline name)
+        #print(keysList[i][0], end=" ") #printing first element of every row (airline name)
         keyMatch = keysList[i][0]
         if keyMatch == airline:
             keyRow = i
             break
 
-    completeList = []
-    keys = ""
-    keyd = []
-    keydRange = range(len(keysList))
+
+    keydRange = range(10) #range(len(keysList)) #this should be equal to the number of columns in the keys.csv file
     for j in keydRange:
         keyd = list((keysList[keyRow][j+1]).split(", "))
-        #keyd = keyd.strip('\"')
-        print(keyd)
-        for k in keyd:
-            keys = keys + "['" + k + "']"
-            print(keys)
-        #keyf = tuple(keys) ####DOES NOT WORK, tuple breaks down into indiv char
-        print(keys)
-        print(dataJson['boardingPass']['auxiliaryFields'][1]['value']) ### numeric values need to be handled without quotation
-        completeList.append(dataJson[keys])
-    print(completeList)
+
+        indexList = dataJson['boardingPass']
+        for q in keyd:
+            if q == "":
+                completeList.append(" ")
+                continue
+            elif q.isnumeric():
+                m = int(q)
+            else:
+                m = str(q)
+            print(m)
+            indexList = indexList[m] #redefines indexList as a new list from within indexList (which was dataJson['boardingPass'], assuming 'boardingPass' is standard, need to check)
+        
+        if indexList == dataJson['boardingPass']:
+            continue
+        else:
+            completeList.append(indexList)
+            print(indexList)
 
     with open('outputFile.csv','a') as f:
         writer = csv.writer(f)
         writer.writerow(completeList)
 
-        
+    #save outputFile.csv
+    #save outputFile.csv
+    #close keys.csv
 
-    #loop through keysList, find match w/ dataJson['organizationName']
-
-
-    #open pass.jsom file DONE as dataJson
-    #open keys.csv file DONE as keysList
-    #open outputFile.csv file DONE as outputList
-    #read the value of organizationName in pass.json DONE as airline
-        #json.loads()
-
-    #find match for organizationName.value in first column of keys.csv - DONE and defined 'keyRow'
-
-    ##new direction:
-        #if organizationName == airlilne
-            #for each col in row(orgName's row)
-                #input (col,row).val into outputfile.csv @ lastRow in same col
-            
-        #save outputFile.csv
-        #save outputFile.csv
-        #close keys.csv
-        ####### go to NEXT pkpass file @ unzipper() ::::: update unzipper() to accept multiple or single files
+    ####### go to NEXT pkpass file @ unzipper() ::::: update unzipper() to accept multiple or single files
 
     #assign variables to each value in corresponding row
     #add those values to outputFIle.csv (this may be a seperate fuction, OR 
@@ -128,3 +113,50 @@ def unzipper():
                         #json2csv(thisFile) - probably done with that? may just use later?
 
 unzipper()
+
+###THIS IS A BURIAL GROUND###
+
+""" #keyd = keyd.strip('\"')
+    #print(keyd)
+    for k in keyd:
+        if k.isnumeric():
+            keys = keys + "[" + k + "]"
+        else:
+            keys = keys + "['" + k + "']"
+    #runner = "dataJson"+keys
+    runner = keyd.values()
+    print(dataJson[runner])
+    completeList.append(dataJson[runner]) 
+    
+        
+
+    #loop through keysList, find match w/ dataJson['organizationName']
+
+
+    #open pass.jsom file DONE as dataJson
+    #open keys.csv file DONE as keysList
+    #open outputFile.csv file DONE as outputList
+    #read the value of organizationName in pass.json DONE as airline
+        #json.loads()
+
+    #find match for organizationName.value in first column of keys.csv - DONE and defined 'keyRow'
+
+    ##new direction:
+        #if organizationName == airlilne
+            #for each col in row(orgName's row)
+                #input (col,row).val into outputfile.csv @ lastRow in same col
+
+
+    #for each col in keyRow,
+            #for each val in col(of keyRow)
+                indexedList = 
+
+
+                outputList = []
+    with open('outputFile.csv', newline='') as inputfile:
+        for row in csv.reader(inputfile):
+            outputList.append(row[0])
+    print(outputList)
+             """
+
+    
