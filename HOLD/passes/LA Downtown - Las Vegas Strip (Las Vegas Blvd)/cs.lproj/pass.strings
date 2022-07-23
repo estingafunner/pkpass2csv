@@ -1,0 +1,28 @@
+"from"="Z";
+"to"="Do";
+"departure"="Odjezd";
+"arrival"="Příjezd";
+"date"="Datum";
+"line"="Linka";
+"checkin"="Check-In";
+"trip"="Cesta";
+"departure_address"="Adresa odjezdu";
+"departure_date"="Datum odjezdu";
+"transfer"="Přestup";
+"passengers_label"="Cestující";
+"booking_number"="Číslo rezervace";
+"seats"="Sedadla";
+"departure_loc_relevance"="Your trip to Las Vegas Strip (Las Vegas Blvd) at 15:15";
+"passenger_list"="Kyli Millender";
+"agb-passenger-station-arrival"="Na zastávku se prosím dostavte 15 minut před odjezdem.";
+"agb-ticket-expires"="Platnost Vaší jízdenky vyprší v čas odjezdu a poté může být znovu prodána.";
+"mobile-luggage-info"="Zavazadlo prosím označte jménem a adresou.
+Následující zavazadla jsou zahrnuta v ceně jízdenky:
+
+ - 1 příruční zavazadlo (42x30x18 cm, max. 7 kg) 
+ - 1 zavazadlo (80x50x30 cm, max. 20 kg)
+
+Potřebujete víc? 
+Přidejte si až 1 nadpočetné zavazadlo (na cestu a cestujícího, max. 20 kg) a 1 nadměrné zavazadlo (na cestu a cestujícího, max. 30 kg) při rezervaci jízdenky nebo dodatečně prostřednictvím zákaznické linky.";
+"mobile-rebooking"="Chcete-li změnit svou rezervaci, navštivte https://shop.global.flixbus.com/rebooking a přihlaste se tam číslem rezervace a e-mailovou adresou.";
+"mobile-help-info"="FAQ: https://global.flixbus.com/service/faq";

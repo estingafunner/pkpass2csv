@@ -1,0 +1,23 @@
+"from"="De";
+"to"="A";
+"departure"="Anada";
+"arrival"="Arribada";
+"date"="Data";
+"line"="Ruta de bus";
+"checkin"="Facturació";
+"trip"="Trajecte";
+"departure_address"="Punt de sortida";
+"departure_date"="Data de sortida";
+"transfer"="Transbord";
+"passengers_label"="Passatgers";
+"booking_number"="Número de reserva";
+"seats"="Seients";
+"departure_loc_relevance"="Your trip to Las Vegas Strip (Las Vegas Blvd) at 15:15";
+"passenger_list"="Kyli Millender";
+"agb-passenger-station-arrival"="Cal que siguis a la parada 15 minuts abans de la sortida.";
+"agb-ticket-expires"="El bitllet venç a l'hora de sortida i es podrà tornar a posar a la venda.";
+"mobile-luggage-info"="Etiqueta l'equipatge amb el nom i l'adreça!  Les peces d'equipatge següents s'inclouen en el preu del bitllet: 
+ - 1 peça d'equipatge de mà (42 x 30 x 18 cm, màx. 7 kg) 
+ - 1 peça d'equipatge normal (80 x 50 x 30 cm, màx. 20 kg)  En necessites més? Afegeix 1 peça d'equipatge addicional (preu per trajecte i passatger, màx. 20 kg) i 1 peça d'equipatge especial (preu per trajecte i passatger, màx. 30 kg) quan reservis el bitllet o posteriorment trucant al nostre servei d'atenció al client.";
+"mobile-rebooking"="Per canviar una reserva, visita https://shop.global.flixbus.com/rebooking i accedeix amb el teu número de reserva i adreça electrònica.";
+"mobile-help-info"="Preguntes freqüents: https://global.flixbus.com/service/faq Adreça electrònica: ";

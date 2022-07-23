@@ -1,0 +1,8 @@
+airline,fliNum,depart,arrive,passenger,class,opBy,confNum,tickNum,departTime,arrTime
+American Airlines,"headerFields, 0, value","primaryFields, 0, value","primaryFields, 1, value","secondaryFields, 0, value",,,,,,
+Fly Delta,"headerFields, 0, value","primaryFields, 0, value","primaryFields, 1, value","secondaryFields, 0, value","secondaryFields, 1, value",,"backFields, 5, value","backFields, 6, value","backFields, 0, value","backFields, 1, value"
+Frontier,"headerFields, 0, value","primaryFields, 0, value","primaryFields, 1, value","secondaryFields, 0, value",,,,,"auxiliaryFields, 3, value",
+JSX,"headerFields, 0, value","primaryFields, 0, value","primaryFields, 1, value","secondaryFields, 0, value","backFields, 3, value",,,,"auxiliaryFields, 0, value","backFields, 1, value"
+Southwest Airlines,"headerFields, 1, value","primaryFields, 0, value","primaryFields, 1, value","secondaryFields, 0, value","auxiliaryFields, 2, value",,"backFields, 2, value","backFields, 3, value","auxiliaryFields, 0, value",
+United Airlines,"headerFields, 0, value","primaryFields, 0, value","primaryFields, 1, value","secondaryFields, 0, value","auxiliaryFields, 3, value","backFields, 1, value","backFields, 0, value",,"backFields, 5, value","backFields, 6, value"
+Alaska Airlines,"auxiliaryFields, 1, value","primaryFields, 0, value","primaryFields, 1, value","secondaryFields, 0, value","auxiliaryFields, 2, value",,,,,

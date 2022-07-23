@@ -1,45 +1,103 @@
+import pandas as pd
 from zipfile import ZipFile
-import uuid
 import json
 import os
 import shutil
-import tkinter as tk
-import tkinter.filedialog as fdi
+import csv
 import pandas as pd
 
 
 def json2csv(passJson):
     with open(passJson, "r") as read_file:
         data = json.load(read_file)
-
     df = pd.json_normalize(data)
-    df.to_csv(r'outputFile.csv', index = None) #NEED TO CREATE A NEW CSV FOR EVERY JSON
-
+    df.to_csv(r'outputFile.csv', index = None)
     #print(data)
     print("wat?")
 
+def keyd(passJson2):
+    
+    with open(passJson2, "r") as read_file:
+        dataJson = json.loads(read_file.read())
+    #jsonData = pd.json_normalize(dataJson) I guess i dont need to normalize it?
+    #print(dataJson)
+    #print(dataJson["organizationName"]) 
+    
+    #dataJson["boardingPass"]["primaryFields"][0]["value"]
+    ##################################THIS IS HOW YOU USE JSON#####################
+
+    keysList = []
+    with open('keys\keys.csv', newline='') as inputfile:
+        for row in csv.reader(inputfile):
+            keysList.append(row)
+    #print(keysList)
+
+    completeList = []
+    keyd = []
+
+    airline = dataJson['organizationName']
+    completeList.append(airline)
+    for i in range(len(keysList)):  
+        #print(keysList[i][0], end=" ") #printing first element of every row (airline name)
+        keyMatch = keysList[i][0]
+        if keyMatch == airline:
+            keyRow = i
+            break
+
+
+    keydRange = range(10) #range(len(keysList)) #this should be equal to the number of columns in the keys.csv file
+    for j in keydRange:
+        keyd = list((keysList[keyRow][j+1]).split(", "))
+
+        indexList = dataJson['boardingPass']
+        for q in keyd:
+            if q == "":
+                completeList.append(" ")
+                continue
+            elif q.isnumeric():
+                m = int(q)
+            else:
+                m = str(q)
+            print(m)
+            indexList = indexList[m] #redefines indexList as a new list from within indexList (which was dataJson['boardingPass'], assuming 'boardingPass' is standard, need to check)
+        
+        if indexList == dataJson['boardingPass']:
+            continue
+        else:
+            completeList.append(indexList)
+            print(indexList)
+
+    with open('outputFile.csv','a') as f:
+        writer = csv.writer(f)
+        writer.writerow(completeList)
+
+    #save outputFile.csv
+    #save outputFile.csv
+    #close keys.csv
+
+    ####### go to NEXT pkpass file @ unzipper() ::::: update unzipper() to accept multiple or single files
+
+    #assign variables to each value in corresponding row
+    #add those values to outputFIle.csv (this may be a seperate fuction, OR 
+    #this could be greatly abbreviated by nesting the addition of data to the csv directly from the keys.csv
+    #skip the step where variables get defined: for each row in col, add to csv @ new line (enumerate?, maybe go to list, then convert to csv? maybe easier to manage? research)
+
+    #CONVERT json
+    #json2csv(thisFile) - useless to this function
+
 def unzipper():
     # assign directory
-
-    root = tk.Tk()
-    filez = fdi.askopenfilenames(parent=root, title='Choose a file')
-    print(filez)
-
-    """     Tk().withdraw() # we don't want a full GUI, so keep the root window from appearing
-    fn = askopenfilename() # show an "Open" dialog box and return the path to the selected file
-    print(fn) """
-
-    #dir1 = 'pkpass' - replaced with user prompt
+    dir1 = 'pkpass'
     dir2 = 'passes'
     dir3 = 'unzipped'
     j = 0
 
-    for filename in filez:
-        #f = os.path.join(dir1, filename)
+    for filename in os.listdir(dir1):
+        f = os.path.join(dir1, filename)
 
-        if os.path.isfile(filename):
+        if os.path.isfile(f):
 
-            with ZipFile(filename, 'r') as zipObject:
+            with ZipFile(f, 'r') as zipObject:
                 listOfFileNames = zipObject.namelist()
 
                 for passName in listOfFileNames:
@@ -47,9 +105,58 @@ def unzipper():
                     if passName == "pass.json":
                         j += 1
                         zipObject.extract(passName, dir3)
-                        uuidPass = (str(uuid.uuid1())[0:14]) + ".json"
-                        shutil.move((dir3 + "/" + passName), (dir2 + "/" + uuidPass))#str(j) + passName)) 
-                        thisFile = dir2 + "/" + uuidPass
-                        json2csv(thisFile) 
+                        shutil.move((dir3 + "/" + passName), (dir2 + "/" + str(j) + passName)) 
+                        thisFile = dir2 + "/" + str(j) + passName
+
+                        #HERE! 12:49 19-Jul-2022
+                        keyd(thisFile)                     
+                        #json2csv(thisFile) - probably done with that? may just use later?
 
 unzipper()
+
+###THIS IS A BURIAL GROUND###
+
+""" #keyd = keyd.strip('\"')
+    #print(keyd)
+    for k in keyd:
+        if k.isnumeric():
+            keys = keys + "[" + k + "]"
+        else:
+            keys = keys + "['" + k + "']"
+    #runner = "dataJson"+keys
+    runner = keyd.values()
+    print(dataJson[runner])
+    completeList.append(dataJson[runner]) 
+    
+        
+
+    #loop through keysList, find match w/ dataJson['organizationName']
+
+
+    #open pass.jsom file DONE as dataJson
+    #open keys.csv file DONE as keysList
+    #open outputFile.csv file DONE as outputList
+    #read the value of organizationName in pass.json DONE as airline
+        #json.loads()
+
+    #find match for organizationName.value in first column of keys.csv - DONE and defined 'keyRow'
+
+    ##new direction:
+        #if organizationName == airlilne
+            #for each col in row(orgName's row)
+                #input (col,row).val into outputfile.csv @ lastRow in same col
+
+
+    #for each col in keyRow,
+            #for each val in col(of keyRow)
+                indexedList = 
+
+
+                outputList = []
+    with open('outputFile.csv', newline='') as inputfile:
+        for row in csv.reader(inputfile):
+            outputList.append(row[0])
+    print(outputList)
+             """
+
+    

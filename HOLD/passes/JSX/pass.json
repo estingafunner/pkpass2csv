@@ -1,0 +1,76 @@
+{
+    "passTypeIdentifier": "pass.com.navitaire.digital.jsx",
+    "formatVersion": 1,
+    "serialNumber": "P3R7MF|WEV_IDEwNn4gfn5MQVN_MTEvMTIvMjAyMCAxODozMH5CVVJ_MTEvMTIvMjAyMCAxOTo0MH5_|MCFBRFQ-|LAS|BUR",
+    "description": "Flight from LAS to BUR",
+    "organizationName": "JSX",
+    "teamIdentifier": "T4W249T368",
+    "sharingProhibited": false,
+    "relevantDate": "2020-11-13T02:30:00+00:00",
+    "foregroundColor": "rgb(0,0,0)",
+    "backgroundColor": "rgb(255,255,255)",
+    "labelColor": "rgb(228,0,43)",
+    "groupingIdentifier": "WEV_IDEwNn4gfn5MQVN_MTEvMTIvMjAyMCAxODozMH5CVVJ_MTEvMTIvMjAyMCAxOTo0MH5_",
+    "expirationDate": "2020-11-16T03:40:00+00:00",
+    "barcodes": [{
+        "format": "PKBarcodeFormatAztec",
+        "message": "M1MILLENDER/KYLI       P3R7MF LASBURXE 0106 317Y006C0004 147>1180  0317BXE 000000000000029569308125718000      3081257180          ",
+        "messageEncoding": "UTF-8"
+    }],
+    "boardingPass": {
+        "headerFields": [{
+            "key": "flight-number",
+            "label": "FlightNumber",
+            "value": "XE-106"
+        }],
+        "primaryFields": [{
+                "key": "origin",
+                "label": "Origin",
+                "value": "LAS"
+            },
+            {
+                "key": "destination",
+                "label": "Destination",
+                "value": "BUR"
+            }
+        ],
+        "secondaryFields": [{
+            "key": "passenger-name",
+            "label": "PassengerName",
+            "value": "Kyli Millender"
+        }],
+        "auxiliaryFields": [{
+                "key": "boarding-time",
+                "label": "BoardingTime",
+                "value": "11/12/2020 6:15 PM"
+            },
+            {
+                "key": "seat",
+                "label": "Seat",
+                "value": "6C"
+            }
+        ],
+        "backFields": [{
+                "key": "record-locator",
+                "label": "RecordLocator",
+                "value": "P3R7MF"
+            },
+            {
+                "key": "arriving-time",
+                "label": "ArrivalTime",
+                "value": "11/12/2020 7:40 PM"
+            },
+            {
+                "key": "ssrs",
+                "label": "SSRs",
+                "value": "-"
+            },
+            {
+                "key": "product-class",
+                "label": "ProductClass",
+                "value": "Hop On"
+            }
+        ],
+        "transitType": "PKTransitTypeAir"
+    }
+}

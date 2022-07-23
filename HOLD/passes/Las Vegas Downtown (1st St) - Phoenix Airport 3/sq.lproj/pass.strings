@@ -1,0 +1,30 @@
+"from"="Nga";
+"to"="Për";
+"departure"="Nisja";
+"arrival"="Mbërritja";
+"date"="Data";
+"line"="Itinerari i autobusëve";
+"checkin"="Regjistrimi";
+"trip"="Udhëtimi";
+"departure_address"="Adresa e nisjes";
+"departure_date"="Data e nisjes";
+"transfer"="Tranziti";
+"passengers_label"="Pasagjerë";
+"booking_number"="Numri i rezervimit";
+"seats"="Vende";
+"departure_loc_relevance"="Your trip to Phoenix Airport at 23:55";
+"passenger_list"="Kyli Millender";
+"agb-passenger-station-arrival"="Paraqitu te stacioni 15 minuta para nisjes.";
+"agb-ticket-expires"="Bileta jote skadon në momentin e nisjes dhe do të jetë sërish e disponueshme për blerje.";
+"mobile-luggage-info"="Etiketoji me emrin dhe adresën tënde. 
+
+Në çmimin e biletës përfshihen bagazhet vijuese:
+
+ - 1 bagazh dore (42x30x18 cm, maks. 7 kg) 
+ - 1 valixhe (80x50x30 cm, maks. 20kg)
+
+Ke nevojë për më tepër? 
+Shto maks. 1 valixhe shtesë (maks. 20 kg) dhe maks. 1 valixhe e veçantë (maks. 30 kg) kur rezervon biletën ose pas rezervimit përmes Linjës Direkte të Shërbimit.";
+"mobile-rebooking"="Për të ndryshuar rezervimin, vizito https://shop.global.flixbus.com/rebooking\n
+dhe regjistrohu me numrin e rezervimit dhe adresën tënde të emailit.";
+"mobile-help-info"="Pyetje të shpeshta: https://global.flixbus.com/service/faq\n";

@@ -1,0 +1,10 @@
+headerFields, flight
+primaryFields, source
+primaryFields, destination
+secondaryFields, passenger
+auxiliaryFields, group
+NONE
+NONE
+NONE
+backFields, confNum
+backFields, rrNum

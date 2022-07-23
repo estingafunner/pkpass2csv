@@ -1,0 +1,28 @@
+"from"="De";
+"to"="À";
+"departure"="Départ";
+"arrival"="Arrivée";
+"date"="Date";
+"line"="Ligne";
+"checkin"="Check-in";
+"trip"="Trajet";
+"departure_address"="Lieu de départ";
+"departure_date"="Date de départ";
+"transfer"="Corresp.";
+"passengers_label"="Passagers";
+"booking_number"="Numéro de réservation";
+"seats"="Sièges";
+"departure_loc_relevance"="Your trip to Las Vegas Strip (Las Vegas Blvd) at 15:15";
+"passenger_list"="Kyli Millender";
+"agb-passenger-station-arrival"="Veuillez vous présenter à l'arrêt 15 minutes avant l'heure de départ.";
+"agb-ticket-expires"="Votre réservation expire à la date et l’heure de départ et peut être remise en vente.";
+"mobile-luggage-info"="Merci de l'étiqueter avec vos nom et adresse.
+
+Les bagages suivants sont inclus dans le prix du billet :
+
+ - 1 bagage à main (42x30x18 cm, max. 7 kg) 
+ - 1 bagage (80x50x30 cm, max. 20kg)
+
+Vous avez besoin de plus d'espace pour vos bagages ? Vous pouvez ajouter jusqu'à 1 bagage supplémentaire (par trajet et par passager, max. 20 kg) et 1 bagage spécial (par trajet et par passager, max. 30 kg) lors de la réservation de votre billet, ou à la suite de celle-ci en contactant le service client.";
+"mobile-rebooking"="Pour modifier votre réservation, rendez-vous sur la page https://shop.global.flixbus.com/rebooking et connectez-vous à l'aide de votre adresse e-mail et de votre numéro de réservation.";
+"mobile-help-info"="FAQ : https://global.flixbus.com/service/faq";

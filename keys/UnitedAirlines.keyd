@@ -1,0 +1,10 @@
+headerFields, flight
+primaryFields, origin
+primaryFields, destination
+secondaryFields, passenger
+auxiliaryFields, group
+- departs back
+- arrives back
+backFields, operatedby
+backFields, confirmation
+NONE

@@ -1,14 +1,15 @@
- Ok so the data I want to extract is:
 - flight number
 - depart
-- destination
+- arrive (destination)
 - passenger
 - class
-- departs back
-- arrives back
 - departs back
 - arrives back
 - operated by
 - confirmation #
 - ticket #
-- transit type
+
+NEED:
+
+- list of airport codes v names
+-
