@@ -1,0 +1,17 @@
+Airline, Flight Number, Departure, Arrival, Passenger, Class, Operated By, Confirmation Number, Ticket Number, Departure Time, Arrival Time, 
+Alaska Airlines,881,LAX,SEA,Kyli Millender,First Class, , , , , 
+
+American Airlines,AA1378,MIA,LIR,MILLENDER/KYLI, , , , , , 
+
+Fly Delta,DL1395,AUS,LAX,KYLI ROCHELLE MILLENDER,Q, ,GUOEWD,0062429778525,"AUS: Austin, TX, US - 3:40PM, Aug 19, 2020","LAX: Los Angeles, CA, US - 4:43PM, Aug 19, 2020"
+
+Frontier,Flight  404,LAX,DEN,KYLI MILLENDER, , , , ,12:54PM, 
+
+JSX,XE-106,LAS,BUR,Kyli Millender,Hop On, , , ,11/12/2020 6:15 PM,11/12/2020 7:40 PM
+
+Southwest Airlines,261,LAS,PHX,Millender/Kyli,B, ,TBJHOW,418375462,09:35 AM, 
+
+Southwest Airlines,473,PHX,LAS,Millender/Kyli,B, ,VCTIH8,418375462,05:20 PM, 
+
+United Airlines,UA 5451,MFR,SFO,MILLENDER/KYLI,1,SKYWEST DBA UNITED EXPRESS,BC53SL, ,6:15 AM,7:41 AM
+

@@ -56,6 +56,7 @@ def keyd(passJson2):
         if indexList == dataJson['boardingPass']:
             continue
         else:
+            indexList = indexList.replace("\n", " - ")
             completeList.append(indexList)
             print(indexList)
     with open('outputFile.csv','a') as f:
