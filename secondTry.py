@@ -1,4 +1,3 @@
-import pandas as pd
 from zipfile import ZipFile
 import json
 import os
@@ -7,7 +6,7 @@ import csv
 import pandas as pd
 
 
-def json2csv(passJson):
+def json2csv(passJson): ### THIS IS A DEAD FUNCTION
     with open(passJson, "r") as read_file:
         data = json.load(read_file)
     df = pd.json_normalize(data)
@@ -19,10 +18,7 @@ def keyd(passJson2):
     
     with open(passJson2, "r") as read_file:
         dataJson = json.loads(read_file.read())
-    #jsonData = pd.json_normalize(dataJson) I guess i dont need to normalize it?
-    #print(dataJson)
-    #print(dataJson["organizationName"]) 
-    
+
     #dataJson["boardingPass"]["primaryFields"][0]["value"]
     ##################################THIS IS HOW YOU USE JSON#####################
 
@@ -30,22 +26,19 @@ def keyd(passJson2):
     with open('keys\keys.csv', newline='') as inputfile:
         for row in csv.reader(inputfile):
             keysList.append(row)
-    #print(keysList)
 
     completeList = []
     keyd = []
 
     airline = dataJson['organizationName']
     completeList.append(airline)
-    for i in range(len(keysList)):  
-        #print(keysList[i][0], end=" ") #printing first element of every row (airline name)
+    for i in range(len(keysList)):
         keyMatch = keysList[i][0]
         if keyMatch == airline:
             keyRow = i
             break
 
-
-    keydRange = range(10) #range(len(keysList)) #this should be equal to the number of columns in the keys.csv file
+    keydRange = range(10) 
     for j in keydRange:
         keyd = list((keysList[keyRow][j+1]).split(", "))
 
@@ -59,31 +52,15 @@ def keyd(passJson2):
             else:
                 m = str(q)
             print(m)
-            indexList = indexList[m] #redefines indexList as a new list from within indexList (which was dataJson['boardingPass'], assuming 'boardingPass' is standard, need to check)
-        
+            indexList = indexList[m]
         if indexList == dataJson['boardingPass']:
             continue
         else:
             completeList.append(indexList)
             print(indexList)
-
     with open('outputFile.csv','a') as f:
         writer = csv.writer(f)
         writer.writerow(completeList)
-
-    #save outputFile.csv
-    #save outputFile.csv
-    #close keys.csv
-
-    ####### go to NEXT pkpass file @ unzipper() ::::: update unzipper() to accept multiple or single files
-
-    #assign variables to each value in corresponding row
-    #add those values to outputFIle.csv (this may be a seperate fuction, OR 
-    #this could be greatly abbreviated by nesting the addition of data to the csv directly from the keys.csv
-    #skip the step where variables get defined: for each row in col, add to csv @ new line (enumerate?, maybe go to list, then convert to csv? maybe easier to manage? research)
-
-    #CONVERT json
-    #json2csv(thisFile) - useless to this function
 
 def unzipper():
     # assign directory
@@ -113,50 +90,3 @@ def unzipper():
                         #json2csv(thisFile) - probably done with that? may just use later?
 
 unzipper()
-
-###THIS IS A BURIAL GROUND###
-
-""" #keyd = keyd.strip('\"')
-    #print(keyd)
-    for k in keyd:
-        if k.isnumeric():
-            keys = keys + "[" + k + "]"
-        else:
-            keys = keys + "['" + k + "']"
-    #runner = "dataJson"+keys
-    runner = keyd.values()
-    print(dataJson[runner])
-    completeList.append(dataJson[runner]) 
-    
-        
-
-    #loop through keysList, find match w/ dataJson['organizationName']
-
-
-    #open pass.jsom file DONE as dataJson
-    #open keys.csv file DONE as keysList
-    #open outputFile.csv file DONE as outputList
-    #read the value of organizationName in pass.json DONE as airline
-        #json.loads()
-
-    #find match for organizationName.value in first column of keys.csv - DONE and defined 'keyRow'
-
-    ##new direction:
-        #if organizationName == airlilne
-            #for each col in row(orgName's row)
-                #input (col,row).val into outputfile.csv @ lastRow in same col
-
-
-    #for each col in keyRow,
-            #for each val in col(of keyRow)
-                indexedList = 
-
-
-                outputList = []
-    with open('outputFile.csv', newline='') as inputfile:
-        for row in csv.reader(inputfile):
-            outputList.append(row[0])
-    print(outputList)
-             """
-
-    
