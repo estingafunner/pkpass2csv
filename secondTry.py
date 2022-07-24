@@ -19,9 +19,6 @@ def keyd(passJson2):
     with open(passJson2, "r") as read_file:
         dataJson = json.loads(read_file.read())
 
-    #dataJson["boardingPass"]["primaryFields"][0]["value"]
-    ##################################THIS IS HOW YOU USE JSON#####################
-
     keysList = []
     with open('keys\keys.csv', newline='') as inputfile:
         for row in csv.reader(inputfile):
@@ -86,8 +83,6 @@ def unzipper():
                         shutil.move((dir3 + "/" + passName), (dir2 + "/" + str(j) + passName)) 
                         thisFile = dir2 + "/" + str(j) + passName
 
-                        #HERE! 12:49 19-Jul-2022
                         keyd(thisFile)                     
-                        #json2csv(thisFile) - probably done with that? may just use later?
-
+                
 unzipper()
