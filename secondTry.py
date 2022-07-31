@@ -4,6 +4,8 @@ import os
 import shutil
 import csv
 import pandas as pd
+import Tkinter,tkFileDialog
+import tkinter.filedialog as fd
 
 
 def json2csv(passJson): ### THIS IS A DEAD FUNCTION
@@ -62,7 +64,11 @@ def keyd(passJson2):
 
 def unzipper():
     # assign directory
-    dir1 = 'pkpass'
+
+    root = tk.Tk()
+    filez = fd.askopenfilenames(parent=root, title='Choose a file')
+
+    dir1 = filez
     dir2 = 'passes'
     dir3 = 'unzipped'
     j = 0
