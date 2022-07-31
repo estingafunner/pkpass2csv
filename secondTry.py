@@ -4,8 +4,10 @@ import os
 import shutil
 import csv
 import pandas as pd
-import Tkinter,tkFileDialog
+import tkinter as tk
 import tkinter.filedialog as fd
+from datetime import datetime
+import time
 
 
 def json2csv(passJson): ### THIS IS A DEAD FUNCTION
@@ -63,12 +65,13 @@ def keyd(passJson2):
         writer.writerow(completeList)
 
 def unzipper():
-    # assign directory
+    #root = tk.Tk()
+    #filez = fd.askopenfilenames(parent=root, title='Choose a file')
+    
+    f = open("outputFile.csv", "w+")
+    f.close()
 
-    root = tk.Tk()
-    filez = fd.askopenfilenames(parent=root, title='Choose a file')
-
-    dir1 = filez
+    dir1 = 'pkpass' #filez
     dir2 = 'passes'
     dir3 = 'unzipped'
     j = 0
@@ -89,6 +92,8 @@ def unzipper():
                         shutil.move((dir3 + "/" + passName), (dir2 + "/" + str(j) + passName)) 
                         thisFile = dir2 + "/" + str(j) + passName
 
-                        keyd(thisFile)                     
-                
+                        keyd(thisFile)  
+    nowish = datetime.today().strftime('%Y-%m-%d') + "_" + str(time.time())
+    nowish = nowish.replace(".", "")
+    shutil.copy(r'outputFile.csv', (nowish + "_pkpassedOut.csv"))
 unzipper()
