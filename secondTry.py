@@ -1,3 +1,4 @@
+from math import e
 from zipfile import ZipFile
 import json
 import os
@@ -52,14 +53,14 @@ def keyd(passJson2):
                 m = int(q)
             else:
                 m = str(q)
-            print(m)
+            #print(m)
             indexList = indexList[m]
         if indexList == dataJson['boardingPass']:
             continue
         else:
             indexList = indexList.replace("\n", " - ")
             completeList.append(indexList)
-            print(indexList)
+            #print(indexList)
     with open('outputFile.csv','a') as f:
         writer = csv.writer(f)
         writer.writerow(completeList)
@@ -95,5 +96,7 @@ def unzipper():
                         keyd(thisFile)  
     nowish = datetime.today().strftime('%Y-%m-%d') + "_" + str(time.time())
     nowish = nowish.replace(".", "")
-    shutil.copy(r'outputFile.csv', (nowish + "_pkpassedOut.csv"))
+    nowish = nowish.replace("-","")
+    nowish = nowish[:(len(nowish) - 7)] #for shortening the UNIX timestamp doown to seconds
+    shutil.copy(r'outputFile.csv', "OUTPUT/" + (nowish + "_pkpassOut.csv"))
 unzipper()
