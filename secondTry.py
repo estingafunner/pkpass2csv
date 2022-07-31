@@ -68,6 +68,10 @@ def keyd(passJson2):
 def unzipper():
     #root = tk.Tk()
     #filez = fd.askopenfilenames(parent=root, title='Choose a file')
+    nowish = datetime.today().strftime('%Y-%m-%d') + "_" + str(time.time())
+    nowish = nowish.replace(".", "")
+    nowish = nowish.replace("-","")
+    nowish = nowish[:(len(nowish) - 7)] #for shortening the UNIX timestamp doown to seconds
     
     f = open("outputFile.csv", "w+")
     f.close()
@@ -94,9 +98,6 @@ def unzipper():
                         thisFile = dir2 + "/" + str(j) + passName
 
                         keyd(thisFile)  
-    nowish = datetime.today().strftime('%Y-%m-%d') + "_" + str(time.time())
-    nowish = nowish.replace(".", "")
-    nowish = nowish.replace("-","")
-    nowish = nowish[:(len(nowish) - 7)] #for shortening the UNIX timestamp doown to seconds
+
     shutil.copy(r'outputFile.csv', "OUTPUT/" + (nowish + "_pkpassOut.csv"))
 unzipper()
